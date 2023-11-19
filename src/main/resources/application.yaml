@@ -1,5 +1,14 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/
-    username:
-    password: 
+    url: jdbc:postgresql://localhost:5432/wheaterapidb
+    username: postgres
+    password: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
+
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:my-secret-key}
